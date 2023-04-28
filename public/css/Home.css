@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+nav{
+    display: flex;
+}
+ul{
+
+}
+.logo {
+    height: 50px; /* adjust this value to the desired height */
+    width: auto;
+    display: block; /* optional: makes the image centered horizontally */
+    margin: 0 auto; /* optional: centers the image horizontally */
+}
