@@ -20,10 +20,10 @@
       <td>{{$item->is_accepted}}</td>
       <td>
        @if($item->is_accepted===0)
-      <form action="/admin/accepted">
+      <form action="/admin/accepted/{{$item->id}}" >
         @csrf
         <input type="hidden" name="userId" value="{{$item->id}}">
-        <button type="submit" class="btn btn-primary">Accept</button>
+      <button type="submit" class="btn btn-primary">Accept</button>
         </form>
         @endif
         <form action="/admin/delete/{{$item->id}}">

@@ -3,10 +3,8 @@
 
 
 
-We are pleased to inform you that your application has been accepted.
+We are sorry to inform you that your application has been Rejected.
 Thank you for your interest in our platform.
-
-
 <!-- <x-mail::button :url="''">
 Button Text
 </x-mail::button> -->

@@ -26,6 +26,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::prefix('/admin')->middleware(['auth','AdminMiddleware'])->group(function(){
     Route::get('/users',[App\Http\Controllers\adminCont::class,'show'])->name('show');
-    Route::get('/accepted',[App\Http\Controllers\adminCont::class,'acceptUser'])->name('accept');
+    Route::get('/accepted/{id}',[App\Http\Controllers\adminCont::class,'Accepted'])->name('accept');
     Route::get('/delete/{id}',[App\Http\Controllers\adminCont::class,'delete'])->name('delete');
 });
