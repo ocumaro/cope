@@ -58,7 +58,14 @@ class adminCont extends Controller
         // redirect back with success message
         return redirect('/admin/users')->with('success', 'User rejected successfully');
     }
-
+    public function userCount()
+    {
+        $usercount = User::count();
+        $acceptedUsers = User::where('is_accepted',1)->count();
+        $waitingUsers = User::where('is_accepted',0)->count();
+        return view('adminlanding',compact('usercount','acceptedUsers','waitingUsers'));
+    }
+   
 
    
 }

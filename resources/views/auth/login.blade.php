@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="container">
+    
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -36,6 +37,11 @@
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
+                                @if (session('notaccepted'))
+    <div class="alert alert-danger">
+        {{ session('notaccepted') }}
+    </div>
+@endif
                             </div>
                         </div>
 

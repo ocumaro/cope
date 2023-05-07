@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-<h1>Show</h1>
+<h1>List of All Applicants</h1>
 
 <table class="table">
   <thead>

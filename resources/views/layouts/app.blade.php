@@ -12,6 +12,10 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{{ asset('node_modules/sweetalert/dist/sweetalert.css') }}">
+<script src="{{ asset('node_modules/sweetalert/dist/sweetalert.min.js') }}"></script>
+
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
